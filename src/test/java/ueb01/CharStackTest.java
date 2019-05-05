@@ -15,7 +15,7 @@ class CharStackTest {
 		assertEquals(0, cs.size());
 
 		// ...und entsprechend eine NoSuchElementException werfen, wenn man pop ruft!
-		assertThrows(NoSuchElementException.class, cs::pop);
+		assertThrows(ArrayIndexOutOfBoundsException.class, cs::pop);
 
 		// jetzt ein paar Werte pushen
 		char[] a = {'a', 'b', 'c'};
